@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>蔚蓝网商品展示页面</title>
+    <link href="css/global.css" rel="stylesheet"/>
+    <link href="css/layout.css" rel="stylesheet"/>
+    <link href="css/template.css" rel="stylesheet" />
+</head>
+<body>
+<header id="header">
+    <div class="header_top">
+        <div class="header_top_left">您好！欢迎光临蔚蓝网 [<a href="login.html" target="_parent">登录</a> | <a href="register.html" target="_parent">免费注册</a>]</div>
+        <div class="header_top_right">
+            <ul>
+                <li><a href="#" target="_self">客户服务</a></li>
+                <li>|</li>
+                <li id="menu"><a href="#" target="_self">新手入门</a> <img src="images/arrow_down.gif" alt="arrow" />
+                    <div id="dd_menu_top_down">
+                        <a href="#" target="_self">购物保障</a><br />
+                        <a href="#" target="_self">购物流程</a><br />
+                        <a href="#" target="_self">会员介绍</a><br />
+                        <a href="#" target="_self">常见问题</a><br />
+                    </div>
+                </li>
+                <li>|</li>
+                <li><a href="#" target="_self">礼品卡</a></li>
+                <li>|</li>
+                <li><a href="#" target="_self">我的订单</a></li>
+                <li>|</li>
+                <li><a href="#" target="_self">我的账户</a></li>
+                <li>|</li>
+                <li><a href="shopping.html" target="_parent">购物车</a></li>
+                <li><img src="images/header_shop.gif" alt="shopping"/></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="header_middle">
+    <div class="logo"><img src="images/logo.png" alt="logo"/></div>
+    <div class="search"><input type="text" placeholder="请输入搜索关键字"><input type="button"></div>
+</div>
+<nav id="nav">
+    <ul>
+        <li><a href="#"> 全部商品分类</a></li>
+        <li><a href="#"> 首页</a></li>
+        <li><a href="#"> 图书</a></li>
+        <li><a href="#"> 特价</a></li>
+        <li><a href="#"> 团购</a></li>
+    </ul>
+</nav>
+<!--中间部分开始-->
+<section id="main">
+    <div class="current_place">您现在的位置：<a href="index.html">蔚蓝图书</a> &gt;&gt; 小说 &gt;&gt; 财经</div>
+    <!--左侧菜单开始-->
+    <div id="product_left">
+        <div id="product_catList">
+            <div class="product_catList_top">浏览同级分类</div>
+            <div id="product_catList_class">
+                <!--<li> ·<a href='#' class='blue'>中国当代小说（13880）</a></li>-->
+                <!--使用javaScript显示图书分类--></div>
+        </div>
+        <div class="product_catList_end">
+            <img src="images/product_01.gif" alt="shopping"/>
+            <img src="images/product_02.gif" alt="shopping"/>
+        </div>
+    </div>
+    <!--右侧内容开始-->
+    <div id="product_storyList">
+        <div id="product_storyList_top">
+            <ul>
+                <li>排序方式</li>
+                <li><img src="images/dd_arrow_right.gif" alt="arrow"/></li>
+                <li>
+                    <select id="compositor">
+                    <option>按销量 降序</option>
+                    <option>按价格 升序</option>
+                    <option>按价格 降序</option>
+                    <option>按折扣 升序</option>
+                    <option>按折扣 降序</option>
+                    <option>按出版时间 升序</option>
+                    <option>按出版时间 降序</option>
+                    <option>按上架时间 升序</option>
+                    <option>按上架时间 降序</option>
+                    </select>
+                </li>
+                <li><img src="images/product_icon_01.gif" alt="icon"/></li>
+                <li><img src="images/product_icon_02.gif" alt="icon"/></li>
+                <li><img src="images/product_icon_03.gif" alt="icon"/></li>
+                <li><img src="images/product_icon_04.gif" alt="icon"/></li>
+                <li>每页显示的数量</li>
+                <li><img src="images/dd_arrow_right.gif" alt="arrow"/></li>
+                <li><img src="images/product_icon_20.gif" alt="icon"/></li>
+                <li><img src="images/product_icon_40.gif" alt="icon"/></li>
+                <li style="float:right; padding-right:10px;"><img src="images/product_page_down.gif" alt="icon"/></li>
+                <li style="float:right;">第1页</li>
+                <li style="float:right;"><img src="images/product_page_up.gif" alt="icon"/></li>
+            </ul>
+        </div>
+        <div id="product_array">
+            <a class="click" name="array"  href="javascript:void(0)">列表</a>
+            <a name="bigImg" href="javascript:void(0)">大图</a>
+        </div>
+        <!--图书排列开始-->
+        <div id="product_storyList_content" class="product_storyList_content">
+
+        </div>
+    </div>
+    <!--右侧内容结束-->
+</section>
+<!--网站版权部分开始-->
+<footer id="footer">
+    <div class="footer_top"><a href="#" target="_parent" class="footer_dull_red">正版保障</a> | <a href="#" target="_parent" class="footer_dull_red">满额免运</a> | <a href="#" target="_parent" class="footer_dull_red">货到付款</a> | <a href="#" target="_parent" class="footer_dull_red">品种最全</a> | <a href="#" target="_parent" class="footer_dull_red">免费退换</a></div>
+    <div class="footer_end">Copyright (C) 蔚蓝网 2006-2016, All Rights Reserved  <img src="images/validate.gif"  alt="版权" style="vertical-align:middle;" /> 京ICP证100488号 出版物经营许可证 京批100160号</div>
+</footer>
+
+<script src="js/jquery-1.12.4.js"></script>
+<!--<script src="js/product.js"></script>
+<script src="js/header.js"></script>-->
+<script>
+    //动态生成图书列表
+    function toBookList(){
+        var bookList=["中国当代小说（13880）","中国近现代小...（640）","中国古典小说（1547）",
+            "四大名著（696）","港澳台小说（838）","外国小说（5119）",
+            "侦探/悬疑/推...（2519）","惊悚/恐怖（798）","魔幻（369）","科幻 （513）",
+            "武侠（574）","军事（726）","情感 （6700）",
+            "社会（4855）","都市（949）","乡土（99）","职场（176）",
+            "财经（292）","官场（438）","历史（1329）","影视小说（501）",
+            "作品集（2019）","世界名著（3273）"];
+        var html=[];//<li> ·<a href='#' class='blue'>中国当代小说（13880）</a></li> 数组
+        $.each(bookList, function (i,obj) {
+            html.push("<li> ·<a href='#' class='blue'>"+obj+"</a></li>");
+        });
+       // alert(html.join(""));
+        $("#product_catList_class").html(html.join(""));
+
+    }
+    //图书展示
+    var bookArr=new Array();
+    bookArr[0]=['product_list_01.jpg','私募（首部披露资本博弈秘密的金融小说）',4,'郭现杰','花山文艺出版社', '2009年08月',
+        '数年前，在一次股市的多、空之战中，以赵云狄、林康为首的私募基金—金鼎投资，和以王雨龙为首的私募基金，达成锁仓协议分食利益。殊料，以王雨龙为首的私募基金—鑫利投资背信弃义，导致金鼎投资惨败。以至...',
+        '13.10','59折','￥18.90','￥32.00'];
+    bookArr[1]=['product_list_02.jpg','圈子圈套.1.战局篇',4,'王强','清华大学出版社', '2006年01月',
+        '虽然没有硝烟，却比战场更血腥；虽然并未战死，却比死亡更痛苦。 洪钧从一个底层的销售人员，成为一家著名的跨国公司的中国区代理首席代表，在即将被扶正，事业情感都志得意满的时候，掉入俞威设计的圈套，...',
+        '￥8.90','68折','￥19.10','￥28.00'];
+    //获取大图的html内容
+    function getDatu(){
+        var datuStr="";
+        $.each(bookArr, function (i,obj) {
+            var str='<div class="big_img_list"><ul class=""><li class="bookImg"><img src="images/product_list_02.jpg" alt="图书列表"></li><li><dl><dd class="footer_dull_red">￥19.10</dd><dd class="product_content_delete">￥28.00</dd><dd class="footer_dull_red">68折</dd></dl></li><li class="detail">虽然没有硝烟，却比战场更血腥；虽然并未战死，却比死亡更痛苦。 洪钧从一个底层的销售人员，成为一家著名的跨国公司的中国区代理首席代表，在即将被扶正，事业情感都志得意满的时候，掉入俞威设计的圈套，...</li><li class="detail">作　者：<a href="#" class="blue_14">王强 </a> 著</li><li class="detail">顾客评分：<img src="images/star_red.gif" alt="star"><img src="images/star_red.gif" alt="star"><img src="images/star_red.gif" alt="star"><img src="images/star_red.gif" alt="star"><img src="images/star_red2.gif" alt="star"></li><li class="detail">出版社：<a href="#" class="blue_14">清华大学出版社</a></li><li class="detail">出版时间：2006年01月</li></ul></div>';
+            datuStr+=str;
+       });
+        return datuStr;
+    }
+    //获取列表的html内容
+    function getLieBiao(){
+        var liebiaoStr="";
+        $.each(bookArr, function (i,obj) {
+            var xingStr="";
+            for(var i=1;i<=5;i++){
+                if(i<=obj[2]){
+                    xingStr+='<img src="images/star_red.gif" alt="star"/>';
+                }else{
+                    xingStr+='<img src="images/star_gray.gif" alt="star"/>';
+                }
+            }
+            var str='<!--列表开始-->          ' +
+                    '          <div class="product_storyList_content_left"><img src="images/'+obj[0]+'" alt="图书列表"/></div> ' +
+                    '<div class="product_storyList_content_right">' +
+                    '                    <ul>' +
+                    '                    <li class="product_storyList_content_dash"><a href="#" class="blue_14">'+obj[1]+'  </a></li> ' +
+                    '<li>顾客评分：'+xingStr+'</li> ' +
+                    '<li>作　者：<a href="#" class="blue_14">'+obj[3]+' </a> 著</li> ' +
+                    '<li>出版社：<a href="#" class="blue_14">'+obj[4]+'</a></li> ' +
+                    '<li>出版时间：'+obj[5]+'</li> ' +
+                    '<li>'+obj[6]+'</li> ' +
+                    '<li> ' +
+                    '<dl class="product_content_dd"> ' +
+                    '<dd><img src="images/product_buy_02.gif" alt="shopping"/></dd> ' +
+                    '<dd><img src="images/product_buy_01.gif" alt="shopping"/></dd> ' +
+                    '<dd>节省：￥11.4</dd> ' +
+                    '<dd>折扣：<span>59折</span></dd> ' +
+                    '<dd class="footer_dull_red"><span>￥16.60</span></dd> ' +
+                    '<dd class="product_content_delete"><span>￥28.00</span></dd> ' +
+                    '</dl> ' +
+                    '</li> ' +
+                    '</ul> ' +
+                    '</div> ' +
+                    '<div class="product_storyList_content_bottom"></div>' +
+                    '<!--列表结束-->';
+
+            liebiaoStr=liebiaoStr+str;
+        })
+
+        return liebiaoStr;
+    }
+    toBookList();
+    $(function () {
+       var liebiaoStr=getLieBiao();
+        var datuStr=getDatu();
+        $("#product_storyList_content").html(liebiaoStr);
+        $("#product_array a").click(function () {
+            if($(this).is("[class='click']")) return;
+            $(this).siblings().removeClass("click");
+            $(this).addClass("click");
+            if($(this).attr("name")=="bigImg"){
+                $("#product_storyList_content").empty().html(datuStr);
+                $(".big_img_list").hover(function () {
+                    $(this).addClass("over");
+                }, function () {
+                    $(this).removeClass("over");
+
+                });
+            }else{
+                $("#product_storyList_content").empty().html(liebiaoStr);
+
+            }
+
+
+        });
+
+    });
+</script>
+</body>
+</html>
